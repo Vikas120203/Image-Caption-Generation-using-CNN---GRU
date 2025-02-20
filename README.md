@@ -5,6 +5,7 @@ Published in: IEEE Conference
 📊 Evaluation Metrics: BLEU, METEOR, CIDEr
 🗂️ Dataset: Flickr8k, Flickr30k
 
+
 ✨ Features
 ✅ End-to-End Deep Learning Pipeline (Image Processing → Feature Extraction → Caption Generation)
 ✅ CNN-GRU Model for accurate captioning
@@ -13,6 +14,7 @@ Published in: IEEE Conference
 ✅ Optimized with Adam Optimizer for better training stability
 ✅ Comparison with LSTM & RNN-based approaches
 ✅ BLEU-4 score of 0.421 (higher than CNN-LSTM)
+
 
 📚 Dataset
 We used two major datasets:
@@ -24,6 +26,7 @@ Flickr30k (30,000 images with 5 captions each)
 Resized to 224×224 pixels
 Normalized pixel values
 Data Augmentation for better generalization
+
 📝 Text Preprocessing:
 
 Tokenization & Stemming
@@ -40,10 +43,11 @@ A Gated Recurrent Unit (GRU) processes image features and generates word-by-word
 Loss Function: Cross-Entropy Loss
 Optimizer: Adam
 
-📊 Model Performance
+Model perfomance:
 Model	BLEU-1	BLEU-2	BLEU-3	BLEU-4	METEOR	CIDEr
 CNN-GRU	0.743	0.614	0.506	0.421	0.332	0.652
 CNN-LSTM	0.714	0.585	0.473	0.391	0.312	0.603
 CNN-RNN	0.682	0.558	0.432	0.347	0.274	0.536
+
 🏆 Key Insight:
 CNN-GRU outperformed CNN-LSTM and CNN-RNN in all major NLP evaluation metrics!
